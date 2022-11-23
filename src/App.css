@@ -1,38 +1,159 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: #6bcdc0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin-top: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav li {
+	margin-right: 15px;
+	background-color: white;
+	border-radius: 10px;
+	padding: 10px;
+	cursor: pointer;
+	color: #6bcdc0;
+	font-weight: bold;
+}
+
+.nav li:hover {
+	background-color: #2e6b63;
+	color: white;
+}
+.container{
+    width: 700px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+}
+.box{
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    font-size: 35px;
+    margin: 15px;
+}
+.password{
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+.password i{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #bbb;
+}
+.password input{
+    width: 100%;
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #eee;
+    border-radius: 40px;
+}
+.password input::placeholder{
+    color: #bbb;
+    font-weight: 500;
+}
+.email{
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+.email i{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #bbb;
+}
+.email input{
+    width: 100%;
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #eee;
+    border-radius: 40px;
+}
+.email input::placeholder{
+    color: #bbb;
+    font-weight: 500;
+}
+
+
+
+.button{
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.button button{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #6bcdc0;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.danger{
+    font-size: 20px;
+    color: red;
+    /* position: absolute; */
+	text-align: center;
+    transition: .3s;
+    animation: buttons .3s linear;
+}
+
+#employees {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 80%;
+	margin-top: 10px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  #employees td, #employees th {
+	border: 1px solid #ddd;
+	padding: 8px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  #employees tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #employees tr:hover {background-color: #ddd;}
+  
+  #employees th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #04AA6D;
+	color: white;
   }
-}
